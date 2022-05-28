@@ -1,0 +1,56 @@
+<html> <!-- como salvar layout.html -->
+	<head>
+			<title>Layout de página com CSS</title>
+			
+			<style>
+				/* Sou um comentário CSS :) */
+				body { margin: 0px ; background:url(thiagokenj.gif) ;}
+				
+				.ajuste { border : 1px solid black ; margin : 5px ;}
+				
+				#cabec 
+				{ 
+				background-color :orange; 
+				height : 100px ;
+				} 
+
+				#lateral 
+				{ 
+				background-color :lightblue;
+				height : 500px ;
+				width : 200px ;
+				float: left ;
+				}
+				
+				#conteudo 
+				{ 
+				background-color :lightgreen;
+				height : 500px ;
+				width : 800px ;
+				float: right ;
+				}
+				
+				#rodape 
+				{ 
+				background-color :silver ;
+				clear : both ;
+				}
+				
+				#principal 
+				{ 
+				width: 1024px ;
+				margin: 0px auto ;
+				}
+		
+			</style>
+	</head>
+	
+	<body>
+		<div id="principal">
+			<div class="ajuste" id="cabec">Cabeçalho</div>
+			<div class="ajuste" id="lateral">Lateral Esquerda</div>
+			<div class="ajuste" id="conteudo">Conteúdo</div>
+			<div class="ajuste" id="rodape">Rodapé</div>
+		</div>
+	</body>
+</html>
