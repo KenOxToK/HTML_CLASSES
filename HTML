@@ -1,0 +1,137 @@
+<html> <!-- salvar como agendamento.html -->
+	<head>
+		<title>Agendamento de Hospedagem (Hotelaria)</title>
+	</head>
+	<body>
+		
+		<div id="principal">
+		
+		
+		<h1>Agendamento de Hospedagem (Hotelaria)</h1>
+		<form	action="agendamento.php"
+				method="post"
+				enctype="multpart/form-data"
+				id="frmCadastro">
+			Filial:
+			<input type="text"
+				   disabled value="PETSHOP BOYS - 03 - Zona Leste"
+				   size="50"
+				   readonly>
+				   <br>
+			Autorização (senha do atendente):
+			<input type="password"
+				   name="senha"
+				   maxlength="15"> <br>
+			<hr>
+			<fieldset>
+			<legend>Dados do PET</legend>
+			Nome / Apelido:
+			<input	type="text"
+					name="nome"
+					maxlength="20"
+					size="20"
+					required
+					placeholder="Até 20 car.">
+			<br>
+			Idade (até 30 anos):
+			<input	type="text"
+					name="idade"
+					maxlength="2"
+					size="2"> <br>
+			Foto:
+			<input	type="file"
+					name="foto"> <br>
+			Tipo:
+			<select name="tipo">
+			<option value ="C">Cachorro</option>
+			<option value ="G">Gato</option>
+			<option value ="O">Outro</option>
+			</select><br>
+			Cor Predominante:
+			<input	type="color"
+					name="corpredominante"
+					value="#000000"> <br>
+			Raça:
+			<input	type="text"
+					name="raca"
+					maxlength="25"
+					size="25"
+					required
+					placeholder="Até 25 caracteres"><br>
+			Sexo:
+			<input	type="radio"
+					name="sexo"
+					checked
+					value="M"> Masculino
+					
+			<input	type="radio"
+					name="sexo"
+					value="F" > Feminino
+			</fieldset><br>
+			<fieldset>
+			<legend>Dados do Proprietário</legend>
+			Nome:
+			<input	type="text"
+					name="nome"
+					maxlength="60"
+					size="60"
+					required
+					placeholder="Até 60 car.">
+			<br>
+			e-mail:
+			<input	type="text"
+					name="email"
+					maxlength="60"
+					size="60"
+					required
+					placeholder="Até 60 car.">
+			<br>
+			<input type="checkbox"
+				   name="recEmails"
+				   checked
+				   value="1"> Deseja receber e-mail <br>
+			Telefone:<br>
+			DDD:
+			<input type="text"
+					name="telefone"
+					maxlength="2"
+					size="2">
+			Numero:
+			<input type="text"
+					name="telefone"
+					maxlength="9"
+					size="9"
+					>
+					
+			</fieldset>
+			<fieldset>
+			<legend>Agendamento da Hospedagem</legend>
+			Data:<input	type="date"
+					name="dPed"
+					id="dPed"
+					value="[data no formato AAAA-MM-DD]"
+					><br>
+			- Hora (08:00hs às 17:30hs)
+			<input  type="time"
+					name="hora"
+					min="08:00:00"
+					max="17:30:00"> <br><hr>
+			
+			N&ordm; de dias contratados (mínimo=2, máximo=7):<br>
+			<input	type="range"
+					name="numeroAtracoes"
+					value="2"
+					min="2"
+					max="7"> <br>
+			Observações:<br>
+			<textarea name="observacoes"
+								rows="4"
+								cois="80"></textarea>
+			</fieldset>
+			<hr>			
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpar Dados">
+		</form>
+		</div>
+	</body>
+</html> 
